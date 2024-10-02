@@ -5,9 +5,8 @@ import java.io.IOException;
 public class AccesInputStream43222998H {
     public String lectura(String pathOrigen) throws IOException {
         // System.out.println(pathOrigen);
-        try { 
-            
-            FileInputStream lectura = new FileInputStream(pathOrigen);
+        try (FileInputStream lectura = new FileInputStream(pathOrigen)) { 
+            //FileInputStream lectura = new FileInputStream(pathOrigen);
             StringBuilder copia = new StringBuilder();
             int i;
             while ((i = lectura.read()) != -1) {
@@ -15,7 +14,7 @@ public class AccesInputStream43222998H {
             }
             lectura.close();
             System.out.print(copia.toString());
-            
+            return copia.toString();
          } catch (java.io.FileNotFoundException e) {
             System.out.println("Fichero no encontrado");
             return null;
@@ -23,7 +22,6 @@ public class AccesInputStream43222998H {
             System.out.println("Error al leer el archivo");
             return null;
         }
-        return copia.toString();
         // return null;
     }
 }
