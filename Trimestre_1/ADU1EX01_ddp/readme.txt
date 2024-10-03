@@ -1,0 +1,2 @@
+Este programa se trata de copiar un archivo y despues quitarle el permiso de lectura a ese documento.
+El programa funciona de la siguiente manera, debes insertar la ruta del archivo que quieres copiar y el solo definira si es binario o de caracteres, ya el solo lo ejecutara todo.

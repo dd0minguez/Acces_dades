@@ -5,9 +5,9 @@ import java.io.IOException;
 public class ADU1EX01_ddp {
         public static void main(String[] args) throws IOException {
 
-            String pathOrigen = "File.txt";
+            String pathOrigen = "fondo.JPG";
             String pathDestinoCaracter = "File2.txt";
-            String pathDestinobinario = "fondo2.png";
+            String pathDestinobinario = "fondo2.JPG";
 
             if (pathOrigen.endsWith(".txt")) {
             AccesFileReader43222998H lecturaTexto = new AccesFileReader43222998H();  
